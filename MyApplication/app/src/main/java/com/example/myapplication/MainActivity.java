@@ -1,6 +1,7 @@
 package com.example.myapplication;
 
 import android.os.Bundle;
+import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -24,6 +25,12 @@ public class MainActivity extends AppCompatActivity {
         //hello jou ma se poes, i need to test somethings.
         //one last edit
         //ballllls bro ipb
-        System.out.println("Bring lozenges");
+
+
+        String word = "Bring lozenges";
+        TextView out = findViewById(R.id.out);
+        out.setText(word);
+
+
     }
 }
