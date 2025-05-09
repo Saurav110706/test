@@ -1,6 +1,8 @@
 package com.example.myapplication;
 
 import android.os.Bundle;
+import android.view.View;
+import android.widget.EditText;
 import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
@@ -11,6 +13,8 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
 
+    EditText user;
+    EditText pass;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,14 +27,28 @@ public class MainActivity extends AppCompatActivity {
         });
 
         //hello jou ma se poes, i need to test somethings.
+        //iuytrityu
         //one last edit
         //ballllls bro ipb
 
 
         String word = "Bring lozenges";
-        TextView out = findViewById(R.id.out);
+        TextView out = findViewById(R.id.editUsername);
         out.setText(word);
 
+    }
+
+    public void process(View v){
+
+        user = findViewById(R.id.editUsername);
+
+        pass = findViewById(R.id.editPassword);
+
+        TextView uOut = findViewById(R.id.userOut);
+        uOut.setText(user.getText());
+
+        TextView pOut = findViewById(R.id.passOut);
+        pOut.setText(pass.getText());
 
     }
 }
