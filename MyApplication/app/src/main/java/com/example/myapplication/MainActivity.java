@@ -32,9 +32,9 @@ public class MainActivity extends AppCompatActivity {
         //ballllls bro ipb
 
 
-        //String word = "Bring lozenges";
-        //TextView out = findViewById(R.id.out);
-        //out.setText(word);
+        String word = "Bring lozenges";
+        TextView out = findViewById(R.id.editUsername);
+        out.setText(word);
 
     }
 
